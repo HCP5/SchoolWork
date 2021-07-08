@@ -16,3 +16,5 @@ l9- logistic regress for classify Iris flowers <br>
 ## Web Programming in WProg
 
 > Tests, programs, and trials from which I learned
+
+# Based on all the above plus the knowledge gained at the UnBreakable Romania contest, I am currently preparing together with my team (Students and old friend), the ground for an intelligent application that will be able to correctly decide the needs of an individual's body and correctly assign a nutritional plan.
