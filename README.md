@@ -1,2 +1,2 @@
 # SchoolWork
-App's from school projects
+Apps from school projects
