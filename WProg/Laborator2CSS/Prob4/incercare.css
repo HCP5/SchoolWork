@@ -1,0 +1,112 @@
+.menuItems{
+    min-width: 100vh;
+    display: inline-flex;
+    /*pentruVertical*/
+    flex-direction: column;
+}
+
+.fa {
+    color: wheat;
+    height: 84px;
+    width: 84px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    flex-grow: 1;
+
+}
+
+.fa-facebook{
+    background: url("css-pr4.png") 0 -84px;
+}
+
+.fa-flickr{
+    background: url("css-pr4.png") -84px -84px;
+}
+
+.fa-dribbble{
+    background: url("css-pr4.png") -168px -84px;
+}
+
+.fa-google-plus{
+    background: url("css-pr4.png") -252px -84px;
+}
+
+.fa-linkedin{
+    background: url("css-pr4.png") -336px -84px;
+}
+
+.fa-pinterest{
+    background: url("css-pr4.png") -420px -84px;
+
+}
+
+.fa-rss{
+    background: url("css-pr4.png") -504px -84px;
+
+}
+
+.fa-skype{
+    background: url("css-pr4.png") -588px -84px;
+}
+.fa-twitter{
+    background: url("css-pr4.png") -672px -84px;
+
+}
+
+.fa-vimeo{
+    background: url("css-pr4.png") -756px -84px;
+
+}
+
+.fa-youtube{
+    background: url("css-pr4.png") -840px -84px;
+}
+
+.fa-facebook:hover{
+    background: url("css-pr4.png") 0 0;
+}
+
+.fa-flickr:hover{
+    background: url("css-pr4.png") -84px 0;
+}
+
+.fa-dribbble:hover{
+    background: url("css-pr4.png") -168px -0px;
+}
+
+.fa-google-plus:hover{
+    background: url("css-pr4.png") -252px -0px;
+}
+
+.fa-linkedin:hover{
+    background: url("css-pr4.png") -336px -0;
+}
+
+.fa-pinterest:hover{
+    background: url("css-pr4.png") -420px -0;
+
+}
+
+.fa-rss:hover{
+    background: url("css-pr4.png") -504px -0px;
+
+}
+
+.fa-skype:hover{
+    background: url("css-pr4.png") -588px -0;
+}
+.fa-twitter:hover{
+    background: url("css-pr4.png") -672px -0px;
+
+}
+
+.fa-vimeo:hover{
+    background: url("css-pr4.png") -756px -0px;
+
+}
+
+.fa-youtube:hover{
+    background: url("css-pr4.png") -840px -0px;
+}

@@ -1,0 +1,9 @@
+rootProject.name = 'TemplateExamen'
+include 'Domain'
+include 'Repository'
+include 'Model'
+include 'Server'
+include 'Service'
+include 'Client'
+include 'RESTMod'
+

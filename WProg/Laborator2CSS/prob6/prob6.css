@@ -1,0 +1,12 @@
+#formWithLabel{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+input {
+    width: 270px;
+    background-image: url("sq.gif");
+    background-size: 19px;
+    font-family: monospace;
+    letter-spacing: 12px;
+}

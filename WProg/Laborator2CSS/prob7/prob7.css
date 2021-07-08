@@ -1,0 +1,26 @@
+.dialog{
+    padding-left: 200px;
+}
+.dialog .alice{
+    list-style-image: url("download.png");
+    margin: 20px;
+    display: inline-block;
+}
+
+.dialog .bob{
+    list-style-image: url("download (1).png");
+    margin: 20px;
+
+}
+
+.alice{
+    /*text-style: outside;*/
+    border-radius: 15px 50px 30px 5px;
+    border: 1px solid black;
+}
+
+.bob{
+    /*text-style: outside;*/
+    border-radius: 15px 50px 30px 5px;
+    border: 1px solid black;
+}

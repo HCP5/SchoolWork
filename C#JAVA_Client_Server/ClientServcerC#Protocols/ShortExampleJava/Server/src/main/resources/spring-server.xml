@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="userRepo" class="hibernatesRepo.UserRepo"/>
+    <bean id="jucatorRepo" class="hibernatesRepo.JucatorRepo">
+
+    </bean>
+
+    <bean id="service" class="impl.MasterService">
+        <constructor-arg ref="userRepo"/>
+        <constructor-arg ref="jucatorRepo"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="serviceName" value="Examen"/>
+        <property name="service" ref="service"/>
+        <property name="serviceInterface" value="services.IMasterService"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+</beans>

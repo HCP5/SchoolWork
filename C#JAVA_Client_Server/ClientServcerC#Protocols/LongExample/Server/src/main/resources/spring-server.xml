@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+    <bean id="validatorCursa" class="entities.domain.validator.CursaValidator"/>
+    <bean id="validatorEchipa" class="entities.domain.validator.EchipaValidator"/>
+    <bean id="validatorMasina" class="entities.domain.validator.MasinaValidator"/>
+    <bean id="validatorParticipanti" class="entities.domain.validator.ParticipantiCursaValidator"/>
+    <bean id="validatorSofer" class="entities.domain.validator.SoferValidator"/>
+    <bean id="validatorUtilizator" class="entities.domain.validator.UtilizatorValidator"/>
+
+    <util:properties id="bdProps" location="bd.properties"/>
+
+    <util:properties id="jdbcProp1">
+        <prop key="jdbc.url">
+            jdbc.url=jdbc:mysql://localhost:3306/cars
+        </prop>
+        <prop key="jdbc.user">
+            jdbc.user=guest
+        </prop>
+        <prop key="jdbc.pass">
+            jdbc.pass=guestMPP@UBB
+        </prop>
+    </util:properties>
+
+    <bean id="cursaRepo" class="repository.database.CursaDBRepository">
+        <constructor-arg index="0" ref="jdbcProp1">
+        </constructor-arg>
+        <constructor-arg index="1" ref="validatorCursa"/>
+    </bean>
+
+    <bean id="echipaDBRepository" class="repository.database.EchipaDBRepository">
+        <constructor-arg index="0" ref="jdbcProp1">
+        </constructor-arg>
+        <constructor-arg index="1" ref="validatorEchipa"/>
+    </bean>
+
+    <bean id="masinaRepo" class="repository.database.MasinaDBRepository">
+        <constructor-arg index="0" ref="jdbcProp1">
+        </constructor-arg>
+        <constructor-arg index="1" ref="validatorMasina"/>
+    </bean>
+    <bean id="participantiRepo" class="repository.database.ParticipantiDBRepository">
+        <constructor-arg index="0" ref="jdbcProp1">
+        </constructor-arg>
+        <constructor-arg index="1" ref="validatorParticipanti"/>
+    </bean>
+
+    <bean id="soferRepo" class="repository.database.SoferDBRepository">
+        <constructor-arg index="0" ref="jdbcProp1">
+        </constructor-arg>
+        <constructor-arg index="1" ref="validatorSofer"/>
+    </bean>
+
+    <bean id="utilizatorRepo" class="repository.database.UtilizatorDBRepository">
+        <constructor-arg index="0" ref="jdbcProp1">
+        </constructor-arg>
+        <constructor-arg index="1" ref="validatorUtilizator"/>
+    </bean>
+
+    <bean id="raceService" class="implementation.MasterService">
+        <constructor-arg index="0" ref="cursaRepo"/>
+        <constructor-arg index="1" ref="echipaDBRepository"/>
+        <constructor-arg index="2" ref="masinaRepo"/>
+        <constructor-arg index="3" ref="participantiRepo"/>
+        <constructor-arg index="4" ref="soferRepo"/>
+        <constructor-arg index="5" ref="utilizatorRepo"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+
+        <property name="serviceName" value="Race"/>
+        <property name="service" ref="raceService"/>
+        <property name="serviceInterface" value="services.IMasterService"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+</beans>

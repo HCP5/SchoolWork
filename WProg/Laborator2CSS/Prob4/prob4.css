@@ -1,0 +1,73 @@
+.menuItems{
+    min-width: 100vh;
+    display: inline-flex;
+    /*pentruVertical*/
+    /*flex-direction: column;*/
+}
+
+.fa {
+    color: wheat;
+    background: black;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    flex-grow: 1;
+
+}
+
+.fa-facebook:hover{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-flickr:hover{
+    background: deeppink;
+    color: white;
+}
+
+.fa-dribbble:hover{
+    background: hotpink;
+    color: white;
+}
+
+.fa-google-plus:hover{
+    background: darkorange;
+    color: white;
+}
+
+.fa-linkedin:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+.fa-pinterest:hover{
+    background: #cb2027;
+    color: white;
+}
+
+.fa-rss:hover{
+    background: yellow;
+    color: white;
+}
+
+.fa-skype:hover{
+    background-color: deepskyblue;
+    color: white;
+}
+.fa-twitter:hover{
+    background-color: #3B5998;
+    color: white;
+}
+
+.fa-vimeo:hover{
+    background-color: blue;
+    color: white;
+}
+
+.fa-youtube:hover{
+    background-color: red;
+    color: white;
+}

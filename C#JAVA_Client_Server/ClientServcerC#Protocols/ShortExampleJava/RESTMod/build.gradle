@@ -1,0 +1,34 @@
+group 'org.example'
+version '1.0-SNAPSHOT'
+buildscript{
+    repositories {
+        mavenCentral()
+    }
+    dependencies{
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.4.5")
+    }
+}
+
+apply plugin:'java'
+apply plugin:'idea'
+apply plugin:'org.springframework.boot'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(path:':Repository',configuration:'default')
+    compile project(path:':Model',configuration:'default')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.25'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.5'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.12.3'
+    compile 'org.springframework.javaconfig:spring-javaconfig:1.0.0.m3'
+    compile 'commons-logging:commons-logging:1.1.1'
+}
+
+test {
+    useJUnitPlatform()
+}

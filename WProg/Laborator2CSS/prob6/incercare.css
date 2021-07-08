@@ -1,0 +1,13 @@
+#formWithLabel{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+input {
+    font-family: monospace;
+    border: solid 2px dimgrey;
+    background: repeating-linear-gradient(90deg, #ffffff 0px, #ffffff 19px, #000000 20px);
+    letter-spacing: 1.75ch;
+    padding-left: 0.5ch;
+    width: 280px;
+}

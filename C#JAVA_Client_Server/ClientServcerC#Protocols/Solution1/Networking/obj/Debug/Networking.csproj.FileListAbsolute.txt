@@ -1,0 +1,11 @@
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\bin\Debug\Networking.dll
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\bin\Debug\Networking.pdb
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\bin\Debug\Domain.dll
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\bin\Debug\Service.dll
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\bin\Debug\Domain.pdb
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\bin\Debug\Service.pdb
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\obj\Debug\Networking.csprojAssemblyReference.cache
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\obj\Debug\Networking.csproj.CoreCompileInputs.cache
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\obj\Debug\Networking.csproj.CopyComplete
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\obj\Debug\Networking.dll
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Networking\obj\Debug\Networking.pdb

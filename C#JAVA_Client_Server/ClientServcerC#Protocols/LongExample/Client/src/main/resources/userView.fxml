@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UserController">
+   <children>
+      <TableView fx:id="curseTable" layoutX="14.0" layoutY="14.0" onMouseClicked="#getParticipanti" prefHeight="200.0" prefWidth="294.0">
+        <columns>
+          <TableColumn fx:id="numeCupaTC" prefWidth="96.2000150680542" text="NumeCupa" />
+          <TableColumn fx:id="capacitateTC" prefWidth="111.19998168945312" text="Capacitate" />
+            <TableColumn fx:id="participantiTC" prefWidth="85.60001220703123" text="Participanti" />
+        </columns>
+      </TableView>
+      <Button fx:id="logOutButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#logMeOut" text="Log Out" />
+      <ComboBox fx:id="echipa" layoutX="388.0" layoutY="244.0" onAction="#getThisTeam" prefWidth="150.0" />
+      <TableView fx:id="SoferMotorT" layoutX="317.0" layoutY="14.0" prefHeight="200.0" prefWidth="262.0">
+        <columns>
+          <TableColumn fx:id="soferTC" prefWidth="136.0" text="Sofer" />
+          <TableColumn fx:id="motorTC" prefWidth="124.39999389648438" text="Motor" />
+        </columns>
+      </TableView>
+      <Button fx:id="inscrie" layoutX="135.0" layoutY="244.0" mnemonicParsing="false" onAction="#goToInscrie" text="Inscrie" />
+   </children>
+</AnchorPane>

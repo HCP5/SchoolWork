@@ -1,0 +1,6 @@
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Domain\bin\Debug\Domain.dll
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Domain\bin\Debug\Domain.pdb
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Domain\obj\Debug\Domain.dll
+D:\De pe Desktop\inLucru\MPP\ClientServer\C#Client_Server\Solution1\Domain\obj\Debug\Domain.pdb

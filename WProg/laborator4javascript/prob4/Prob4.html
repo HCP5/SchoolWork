@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prob4</title>
+    <script src="prob4.js"></script>
+    <link rel="stylesheet" href="prob4.css">
+</head>
+<body>
+<table id="table">
+    <tr>
+        <th id="Fr" onclick="if(rec){sort(this.id)} else{sortB(this.id)}">Fructe</th>
+        <td id="Fr1">Mere</td>
+        <td id="Fr2">Pere</td>
+    </tr>
+    <tr>
+        <th id="Pr"onclick="if(rec){sort(this.id)} else{sortB(this.id)}">Pret</th>
+        <td id="Pr1">3</td>
+        <td id="Pr2">4</td>
+    </tr>
+    <tr>
+        <th id="Ca" onclick="if(rec){sort(this.id)} else{sortB(this.id)}">Cantitate</th>
+        <td id="Ca1">8</td>
+        <td id="Ca2">6</td>
+    </tr>
+</table>
+<button onclick="refactor()">resort</button>
+</body>
+</html>

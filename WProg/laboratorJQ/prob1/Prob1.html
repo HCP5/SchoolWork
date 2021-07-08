@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 1</title>
+    <script src="prob1scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<h3 style="margin-left: 10px">2 liste cu tagul select. La dublu click pe un<br> element dintr-o  lista acesta sa se mute in cealalta lista</h3>
+
+<label  style="margin-right: 30px">
+    Lista 1
+    <select multiple id="firstList" ondblclick="moveA_B(this.id)">
+        <option>Element 1</option>
+        <option>Element 2</option>
+        <option>Element 3</option>
+        <option>Element 4</option>
+    </select>
+</label>
+<label>
+    Lista 2 :
+    <select multiple id="secondList" ondblclick="moveA_B(this.id)">
+        <option>Element 5</option>
+        <option>Element 6</option>
+        <option>Element 7</option>
+        <option>Element 8</option>
+        <option>Element 9</option>
+    </select>
+</label>
+</body>
+</html>

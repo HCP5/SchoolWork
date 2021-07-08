@@ -1,0 +1,22 @@
+.list{
+    border: 2px solid black;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: yellow;
+}
+
+.list li{
+    margin: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list li span{
+    margin: 20px;
+    display: block;
+}
+
+.list li img{
+    max-width: 200px;
+}
